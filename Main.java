@@ -18,7 +18,7 @@ public class Main {
     static int mMonth = 1;
 
     public Main(){
-        file = new File("E:\\ProgramData\\IDEA\\workspace\\java\\idu\\leetcode\\code\\src\\main\\resources\\test");
+        file = new File("test");
         self = this;
     }
 
