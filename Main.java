@@ -79,7 +79,7 @@ public class Main {
         System.out.println(directory.getAbsolutePath());
         System.out.println(directory.getPath());
 
-        //new Main().update(new File("E:\\ProgramData\\IDEA\\workspace\\java\\idu\\leetcode\\code\\src\\main\\resources\\test"));
+      
     }
 
 }
