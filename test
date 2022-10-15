@@ -1,0 +1,12 @@
+       try {
+                Path fp = file.toPath();
+                BasicFileAttributes ra = Files.readAttributes(fp, BasicFileAttributes.class);
+                FileTime fileTime = FileTime.fromMillis(System.currentTimeMillis());
+                if ((fileTime.to(TimeUnit.DAYS) - ra.creationTime().to(TimeUnit.DAYS)) > 1) {
+                    Files.setAttribute(fp, "basic:creationTime", fileTime);
+                    append = false;
+                }
+            } catch (Exception e) {
+                append = false;
+                e.printStackTrace();
+            }
